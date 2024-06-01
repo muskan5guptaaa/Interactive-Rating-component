@@ -1,0 +1,149 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+body{
+  background: hsl(216, 12%, 8%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+.container,
+.container2{
+  background: hsl(213, 19%, 18%);
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 25px;
+  gap: 30px;
+  border-radius: 25px;
+}
+.container .img{
+  background: hsl(216, 12%, 54%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.container img{
+  height: 20px;
+  width: 20px;
+}
+.container .text,
+.container2 .text{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container .text h2,
+.container2 .text h2{
+  color: #fff;
+  font-weight: 600;
+}
+
+.container .text p,
+.container2 .text p{
+  font-size: 15px;
+  color: hsl(216, 12%, 54%);
+  
+}
+
+.container ul{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.container ul li button{
+  border: none;
+  outline: none;
+  background: hsl(216, 12%, 54%);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+}
+.container ul li button:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+}
+
+.container ul li button:focus {
+  background-color: #d3d3d3;
+}
+
+.container .submit-btn {
+  height: 50px;
+  font-size: 15px;
+  background: hsl(25, 97%, 53%);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.container button:hover {
+  background: #fff;
+  color: hsl(25, 97%, 53%);
+}
+.hidden{
+  display: none;
+}
+
+container2 .imgbox {
+  text-align: center;
+}
+
+.container2 .imgbox img {
+  height: 100px;
+  width: 150px;
+}
+
+.container2 .rating {
+  margin: 0 auto;
+}
+.container2 .rating p {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(216, 12%, 54%);
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 40px;
+  font-size: 14px;
+}
+
+.container2 .center {
+  text-align: center;
+}
+
+.attribution {
+  margin-top: 40px;
+  color: #fff;
+}
+@media (max-width: 522px) {
+  .container,
+  .container2 {
+    width: 370px;
+  }
+
+  .container ul li button {
+    height: 40px;
+    width: 40px;
+  }
+}
